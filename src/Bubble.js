@@ -108,7 +108,7 @@ export default class Bubble extends React.Component {
         (buttonIndex) => {
           switch (buttonIndex) {
             case 0:
-              Clipboard.setString(this.props.currentMessage.text);
+              Clipboard.setString(this.props.currentMessage.text.props.rawText);
               break;
           }
         });
